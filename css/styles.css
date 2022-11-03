@@ -687,3 +687,30 @@ footer {
   display: flex;
   flex-direction: column;
 }
+.modal-form-tittle{
+  font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+margin-top: 40px;
+margin-inline: 40px ;
+}
+.modal-form-text{
+  font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: #757575;
+}
+.textarea-text placeholder{
+  font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: #757575;
+}
