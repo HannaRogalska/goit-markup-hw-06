@@ -459,6 +459,10 @@ footer {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-input{
+  color:#ffffff;
+  
+}
 .footer-button {
   width: 200px;
   height: 50px;
@@ -678,4 +682,8 @@ footer {
   visibility: hidden;
   pointer-events: none;
   transform: translateY(-100%);
+}
+.modal-form{
+  display: flex;
+  flex-direction: column;
 }

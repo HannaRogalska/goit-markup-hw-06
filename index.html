@@ -414,6 +414,34 @@
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <p>Zostaw swoje dane w formularzu poniżej</p>
+          <label for="user_name">Imie</label>
+          <iput type="text" name="name" id="user_name">
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </iput>
+          <label for="user_phone">Telefon</label>
+          <iput type="tel" name="phone" id="user_phone">
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+          </iput>
+          <label for="user_email">Email</label>
+          <iput type="email" name="email" id="user_email">
+            <svg width="12" height="12">
+              <use href="./images/icons.svg#icon-mail-black"></use>
+            </svg>
+          </iput>
+          <label for="comment" >Komentarz</label>
+          <textarea name="comment" id="comment" rows="10" placeholder="Wprowadź tekst"></textarea>
+          <label>
+            <input type="checkbox" name="oswiadczenia" value="regulamin" checked />
+            Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+          </label>
+          <button type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
