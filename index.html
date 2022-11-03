@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Studio</title>
   </head>
-  <input>
+  <body>
     <header>
       <nav class="header-nav container">
         <div class="header-logo">
@@ -381,17 +381,16 @@
             </ul>
           </div>
           <form class="footer-send" name="send" autocomplete="on" novalidate>
-            <p class="footer-registration">
-              Zapisz się do newslettera 
-            </p> 
+            <p class="footer-registration">Zapisz się do newslettera</p>
             <label class="footer-label">
-      
-              <input class="footer-input"
-              type="email"
-              name="email"
-              placeholder="E-mail"/>
+              <input
+                class="footer-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
             </label>
-            
+
             <button class="footer-button" type="submit">
               <span class="footer-botton-text">Zapisz się</span>
               <svg class="" width="24" height="24">
@@ -411,27 +410,48 @@
           </svg>
         </button>
         <form class="modal-form">
-          <p class="modal-form-tittle">Zostaw swoje dane w formularzu poniżej</p> 
-          <label for="user_name" class="modal-form-text">Imie</label>
-          <input class="modal-form-input" type="text" name="name" id="user_name"/>
-          <svg width="12" height="12">
-            <use href="./images/icons.svg#icon-person"></use>
-          </svg>
-          <label for="user_phone" class="modal-form-text">Telefon</label>
-          <input type="tel" name="phone" id="user_phone"/>
-          <svg width="12" height="12">
-            <use href="./images/icons.svg#icon-phone-black"></use>
-          </svg>
+          <p class="modal-form-tittle">
+            Zostaw swoje dane w formularzu poniżej
+          </p>
+          <label class="modal-form-text"
+            ><span class="modal-form-indent">Imie</span>
+            <input class="modal-form-input" type="text" name="name" />
+            <svg class="modal-form-svg" width="12" height="12">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </label>
 
-          <label for="user_email" class="modal-form-text">Email</label>
-          <input type="email" name="email" id="user_email"/>
-          <svg width="12" height="12">
-            <use href="./images/icons.svg#icon-mail-black"></use>
-          </svg>
+          <label class="modal-form-text"
+            ><span class="modal-form-indent">Telefon</span>
+            <input class="modal-form-input" type="tel" name="phone" />
+            <svg class="modal-form-svg" width="12" height="12">
+              <use href="./images/icons.svg#icon-phone-black"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-text"
+            ><span class="modal-form-indent">Email</span>
+            <input class="modal-form-input" type="email" name="email" />
+            <svg class="modal-form-svg" width="12" height="12">
+              <use href="./images/icons.svg#icon-mail-black"></use>
+            </svg>
+          </label>
+
           <label for="comment" class="modal-form-text">Komentarz</label>
-          <textarea class="textarea-text"  name="comment" id="comment" rows="10" placeholder="Wprowadź tekst"></textarea>
+          <textarea
+            class="textarea-text"
+            name="comment"
+            id="comment"
+            rows="10"
+            placeholder="Wprowadź tekst"
+          ></textarea>
           <label>
-            <input type="checkbox" name="oswiadczenia" value="regulamin" checked/>
+            <input
+              type="checkbox"
+              name="oswiadczenia"
+              value="regulamin"
+              checked
+            />
             Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
           </label>
           <button type="submit">Wyślij</button>

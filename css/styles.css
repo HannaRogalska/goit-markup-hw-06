@@ -435,6 +435,7 @@ footer {
   background-color: #2f303a;
   padding-left: 16px;
   padding-block: 15px;
+  outline: none;
 }
 
 .footer-registration {
@@ -679,6 +680,16 @@ footer {
   display: flex;
   flex-direction: column;
 }
+.modal-form-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.modal-form-svg {
+  position: absolute;
+  left: 15px;
+  bottom: 14px;
+}
 .modal-form-tittle {
   font-style: normal;
   font-weight: 700;
@@ -697,4 +708,17 @@ footer {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
+  margin-left: 40px;
+}
+.modal-form-indent {
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+
+.modal-form-input {
+  padding: 0;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
