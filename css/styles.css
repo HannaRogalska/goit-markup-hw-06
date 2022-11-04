@@ -697,7 +697,8 @@ footer {
   /* display: flex;
   flex-direction: column; */
 }
-.form-modal-fieldset {
+.form-modal-fieldset,
+.form-modal-fieldset-textarea {
   display: flex;
   align-items: center;
   width: 448px;
@@ -727,7 +728,8 @@ footer {
   top: -20px;
   left: 0;
 }
-.modal-input {
+.modal-input,
+.modal-input-textarea {
   border: 0;
   outline: 0;
   font-size: 15px;
@@ -744,15 +746,33 @@ footer {
 .form-modal-fieldset-textarea {
   width: 448px;
   height: 120px;
-  margin-left: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  padding: 0;
-  display: flex;
-}
-.modal-input-textarea {
-  width: 416px;
-  height: 96px;
-  display: flex;
   align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  padding-top: 12px;
+}
+.modal-input-textarea placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.label-chexbox {
+  margin-left: 54px;
+}
+.checkbox-text {
+  color: var(--brand-color);
+}
+.form-button {
+  width: 200px;
+  height: 50px;
+  margin-left: 164px;
+  margin-top: 30px;
+  background-color: var(--brand-color);
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: var(--brand-color);
 }

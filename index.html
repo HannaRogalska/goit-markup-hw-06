@@ -427,24 +427,14 @@
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
             <label class="modal-label" for="phone">Telefon</label>
-            <input
-              class="modal-input"
-              type="tel"
-              id="phone"
-              placeholder="+48321456765"
-            />
+            <input class="modal-input" type="tel" id="phone" />
           </fieldset>
           <fieldset class="form-modal-fieldset">
             <svg class="modal-svg" width="12" height="12">
               <use href="./images/icons.svg#icon-mail-black"></use>
             </svg>
             <label class="modal-label" for="mail">Email</label>
-            <input
-              class="modal-input"
-              type="email"
-              id="mail"
-              placeholder="E-mail"
-            />
+            <input class="modal-input" type="email" id="mail" />
           </fieldset>
 
           <fieldset class="form-modal-fieldset-textarea">
@@ -454,8 +444,16 @@
               type="textarea"
               id="comment"
               placeholder="Wprowadź tekst"
+              row="15"
             />
           </fieldset>
+          <label class="label-chexbox">
+            <input type="checkbox" id="label-chexbox" />
+            Oświadczam iż akceptuję
+            <span class="checkbox-text">Regulamin</span> i
+            <span class="checkbox-text">Politykę Prywatności.</span>
+          </label>
+          <button class="form-button" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
