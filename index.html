@@ -383,7 +383,9 @@
 
           <form class="footer-send" name="send" autocomplete="on" novalidate>
             <fieldset class="footer-fieldset">
-              <label class="footer-label" for="input">Zapisz się do newslettera</label>
+              <label class="footer-label" for="input"
+                >Zapisz się do newslettera</label
+              >
               <input
                 class="footer-input"
                 type="email"
@@ -392,9 +394,8 @@
                 id="input"
               />
             </fieldset>
-            
-            
-            <fieldset  class="footer-fieldset-button"> 
+
+            <fieldset class="footer-fieldset-button">
               <button class="footer-button" type="submit">Zapisz się</button>
               <svg class="footer-svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-icon-send"></use>
@@ -412,52 +413,49 @@
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
         </button>
-        <form class="modal-form">
-          <p class="modal-form-tittle">
-            Zostaw swoje dane w formularzu poniżej
-          </p>
-          <label class="modal-form-text"
-            ><span class="modal-form-indent">Imie</span>
-            <input class="modal-form-input" type="text" name="name" />
-            <svg class="modal-form-svg" width="12" height="12">
+        <form class="form-modal" name="form-modal">
+          <h3 class="modal-title">Zostaw swoje dane w formularzu poniżej</h3>
+          <fieldset class="form-modal-fieldset">
+            <svg class="modal-svg" width="12" height="12">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
-          </label>
-
-          <label class="modal-form-text"
-            ><span class="modal-form-indent">Telefon</span>
-            <input class="modal-form-input" type="tel" name="phone" />
-            <svg class="modal-form-svg" width="12" height="12">
+            <label class="modal-label" for="name">Imie</label>
+            <input class="modal-input" type="text" id="name" />
+          </fieldset>
+          <fieldset class="form-modal-fieldset">
+            <svg class="modal-svg" width="12" height="12">
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
-          </label>
-
-          <label class="modal-form-text"
-            ><span class="modal-form-indent">Email</span>
-            <input class="modal-form-input" type="email" name="email" />
-            <svg class="modal-form-svg" width="12" height="12">
+            <label class="modal-label" for="phone">Telefon</label>
+            <input
+              class="modal-input"
+              type="tel"
+              id="phone"
+              placeholder="+48321456765"
+            />
+          </fieldset>
+          <fieldset class="form-modal-fieldset">
+            <svg class="modal-svg" width="12" height="12">
               <use href="./images/icons.svg#icon-mail-black"></use>
             </svg>
-          </label>
-
-          <label for="comment" class="modal-form-text">Komentarz</label>
-          <textarea
-            class="textarea-text"
-            name="comment"
-            id="comment"
-            rows="10"
-            placeholder="Wprowadź tekst"
-          ></textarea>
-          <label>
+            <label class="modal-label" for="mail">Email</label>
             <input
-              type="checkbox"
-              name="oswiadczenia"
-              value="regulamin"
-              checked
+              class="modal-input"
+              type="email"
+              id="mail"
+              placeholder="E-mail"
             />
-            Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
-          </label>
-          <button type="submit">Wyślij</button>
+          </fieldset>
+
+          <fieldset class="form-modal-fieldset-textarea">
+            <label class="modal-label" for="comment">Komentarz</label>
+            <input
+              class="modal-input-textarea"
+              type="textarea"
+              id="comment"
+              placeholder="Wprowadź tekst"
+            />
+          </fieldset>
         </form>
       </div>
     </div>
