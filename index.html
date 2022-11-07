@@ -420,36 +420,53 @@
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
             <label class="modal-label" for="name">Imie</label>
-            <input class="modal-input" type="text" id="name" />
+            <input name="name" class="modal-input" type="text" id="name" />
           </fieldset>
           <fieldset class="form-modal-fieldset">
             <svg class="modal-svg" width="12" height="12">
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
             <label class="modal-label" for="phone">Telefon</label>
-            <input class="modal-input" type="tel" id="phone" />
+            <input name="phone" class="modal-input" type="tel" id="phone" />
           </fieldset>
           <fieldset class="form-modal-fieldset">
             <svg class="modal-svg" width="12" height="12">
               <use href="./images/icons.svg#icon-mail-black"></use>
             </svg>
             <label class="modal-label" for="mail">Email</label>
-            <input class="modal-input" type="email" id="mail" />
+            <input name="mail" class="modal-input" type="email" id="mail" />
           </fieldset>
 
           <fieldset class="form-modal-fieldset-textarea">
             <label class="modal-label" for="comment">Komentarz</label>
-            <textarea class="modal-textarea"
+            <textarea
+              name="comment"
+              class="modal-textarea"
               type="textarea"
               id="comment"
               placeholder="Wprowadź tekst"
-              row="15"></textarea>
+              row="15"
+            ></textarea>
           </fieldset>
           <label class="label-chexbox">
-            <input type="checkbox" id="label-chexbox" />
-            Oświadczam iż akceptuję
-            <span class="checkbox-text">Regulamin</span> i
-            <span class="checkbox-text">Politykę Prywatności.</span>
+            <input
+              class="checkbox"
+              name="legal"
+              type="checkbox"
+              id="label-chexbox"
+            />
+            <span class="checkbox-icon">
+              <svg class="modal-svg-checkbox" width="11" height="8">
+                <use href="./images/icons.svg#icon-mark"></use>
+              </svg>
+            </span>
+            <span>
+              Oświadczam iż akceptuję
+              <a href="#terms" class="checkbox-text">Regulamin</a> i
+              <a href="#privacy-policy" class="checkbox-text"
+                >Politykę Prywatności.</a
+              >
+            </span>
           </label>
           <button class="form-button" type="submit">Wyślij</button>
         </form>
